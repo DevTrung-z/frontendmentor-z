@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="themify-icons/themify-icons.css">
   <title>Frontend Mentor | Browser extensions manager UI</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,65 +17,70 @@
 </head>
 <body>
 
-  Extensions List
+  <div class="extensions">
 
-  All
-  Active
-  Inactive
+    <header class="extensions__header">
+      <img src="/browser-extensions-manager-ui-main/assets/images/logo.svg" alt="">
+      <!-- button night-light -->
+      <div class="extentions__theme-toggle">
+          <img src="/browser-extensions-manager-ui-main/assets/images/icon-moon.svg" alt="">
+      </div>
+    </header>
 
-  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+    <!-- Filter buttons -->
+    <div class="extensions__filters">
+      <h2 class="Extensions_title">Extensions List</h2>
+      <div class="btn_extentions">
+        <button class="extensions__filter-btn extensions__filter-btn--active">All</button>
+        <button class="extensions__filter-btn">Active</button>
+        <button class="extensions__filter-btn">Inactive</button>
+      </div>
+    </div>
+    
+    <!-- Extension Cards Grid -->
+    <div class="extensions__list" id="extensionsList">
 
-  DevLens
-  Quickly inspect page layouts and visualize element boundaries.
-  Remove
+      <!-- cart 1 -->
+      <div class="extension-card">
 
-  StyleSpy
-  Instantly analyze and copy CSS from any webpage element.
-  Remove
+        <div class="extention-item">
 
-  SpeedBoost
-  Optimizes browser resource usage to accelerate page loading.
-  Remove
+          <div class="extension-card__icon">
+            <img src="/browser-extensions-manager-ui-main/assets/images/logo-devlens.svg" alt="DevLens" />
+          </div>
+  
+          <div class="extension-card__content">
+            <h3 class="extension-card__title">DevLens</h3>
+            <p class="extension-card__description">
+              Quickly inspect page layouts and visualize element boundaries.
+            </p>
+          </div>
 
-  JSONWizard
-  Formats, validates, and prettifies JSON responses in-browser.
-  Remove
+        </div>
 
-  TabMaster Pro
-  Organizes browser tabs into groups and sessions.
-  Remove
+        <div class="extension-card__actions">
+          <button class="extension-card__remove-btn">Remove</button>
 
-  ViewportBuddy
-  Simulates various screen resolutions directly within the browser.
-  Remove
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
 
-  Markup Notes
-  Enables annotation and notes directly onto webpages for collaborative debugging.
-  Remove
+      </div>
 
-  GridGuides
-  Overlay customizable grids and alignment guides on any webpage.
-  Remove
+      <!-- cart 2 -->
+     
+     
 
-  Palette Picker
-  Instantly extracts color palettes from any webpage.
-  Remove
 
-  LinkChecker
-  Scans and highlights broken links on any page.
-  Remove
+      </div>
 
-  DOM Snapshot
-  Capture and export DOM structures quickly.
-  Remove
+    </div>
 
-  ConsolePlus
-  Enhanced developer console with advanced filtering and logging.
-  Remove
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <!-- File Js  -->
+   <script src="assets/js/scripts.js"></script>
 </body>
 </html>
