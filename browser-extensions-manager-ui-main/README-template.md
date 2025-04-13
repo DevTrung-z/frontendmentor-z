@@ -25,7 +25,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 Users should be able to:
 
 - Toggle extensions between active and inactive states
-- Filter active and inactive extensions
+- Filter active and inactive extensions     
 - Remove extensions from the list
 - Select their color theme
 - View the optimal layout for the interface depending on their device's screen size
